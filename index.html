@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Form</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .search-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .search-box h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .search-box form {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-box input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 10px 16px;
+      font-size: 16px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="search-box">
+    <h2>Search Anything</h2> <!-- 👈 Heading added here -->
+    
+    <form action="https://formsubmit.co/aruncse5711@email.com" method="POST">
+      <!-- Hidden FormSubmit Settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Search Query Submitted">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- Visible Input -->
+      <input type="text" name="search" placeholder="Enter your query..." required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+</body>
+</html>
